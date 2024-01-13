@@ -108,3 +108,35 @@
     . git reset -> 預設模式(mixed) 可反悔
     . git reset --hard (commit-object) -> hard模式 無法反悔
     . git reset --soft (commit-object) -> soft模式 檔案等待commit
+
+## Github 遠端指令 (git remote)
+
+### git remote
+    . git remote show origin -> 印出遠端倉庫資訊
+    . git remote remove origin -> 移除遠端origin
+    . git remote add origin (url) -> 新增遠端倉庫連結
+    . git push --delete origin (branch-name) -> 移除遠端分支
+    . git branch -a -> 顯示遠端分支
+
+### 新增github遠端連結
+    . git remote add origin (origin-url)
+
+### 首次Push檔案
+    . git push -u origin master -> push至遠端分支名為master
+    . git push -u origin (branch-name) -> 推送至遠端 branch-name 分支
+    . git push -> 後續只需 git push 同步遠端倉庫區檔案
+
+### git push
+    . git push -f -> 不管衝突 直接覆蓋遠端
+
+### 檢視目前所有的遠端url
+    . git remote -v
+
+### 加入不需要控管的檔案
+    . 新增 .gitignore 檔案
+
+### 將遠端倉庫區檔案拉回本地端 (git pull)
+    . git pull
+
+### 複製遠端倉庫區檔案
+    . git clone (url)

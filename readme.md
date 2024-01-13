@@ -101,3 +101,10 @@
         . Accept Both Changes -> 兩個檔案都保留
         . Compare Changes -> 比對兩個檔案
 
+### 顯示其他 commit-object
+    . git reflog
+
+### 真正意義的回到過去的commit
+    . git reset -> 預設模式(mixed) 可反悔
+    . git reset --hard (commit-object) -> hard模式 無法反悔
+    . git reset --soft (commit-object) -> soft模式 檔案等待commit
